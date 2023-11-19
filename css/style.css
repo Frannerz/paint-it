@@ -1,0 +1,124 @@
+:root {
+    --grey : rgb(221, 219, 219);
+    --pink :  #FFC4BC;
+    --white-pink :  #f6ebe9;
+    ;
+}
+
+
+.center {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.flex-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-container img {
+    width:2rem;
+    height:2rem
+}
+/* .tools {
+    
+    
+} */
+.tools-grid {
+    /* border-radius: 10px; */
+    /* background-color: var(--grey);
+    border:1px solid black; */
+    /* width: 40rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height:2.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /* flex-direction: column;
+    justify-content: space-between; */
+    /* padding: 1rem; */
+}
+/* 
+.tools-grid > *  {
+    border-right: 1px solid grey;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+} */
+body{
+    background-image: linear-gradient(150deg, var(--pink) 0%,    var(--white-pink) 66.19%);
+    height: 100vh;
+}
+header {
+    height: 3rem;
+    /* background-color: antiquewhite; */
+    border-bottom: 1px solid black;
+    
+}
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    line-height: 2rem;
+    padding-left: 2rem;
+}
+
+
+canvas {
+    border: 4px inset var(--grey);
+    background-color: white;
+    margin: 1rem;
+}
+
+.input{
+    height:2rem;
+    border: 4px outset var(--grey);
+    border-radius: 0.2rem;
+    
+}
+
+
+.colorpicker{
+    width: 2rem;
+    height: 2rem;
+    border: 1px outset var(--grey);
+    display:none;
+}
+.capStyle {
+    display: none;
+}
+
+.special-effects{
+    display:none;
+  }
+.show {
+    display: block;
+}
+
+#effect-preview, #brush-preview {
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 4px outset var(--grey);
+    background-size: cover;
+    
+}
+
+#effect-preview {
+    background-image: url('/images/source-over.png');
+}
+
+#brush-preview{
+    background-image: url('/images/round.png');
+}
+
+.effects-container, .cap-container{
+    display: flex;
+   flex-direction: row-reverse;
+}
+
+
+
+/* .toolkit-div{
+    margin: 1rem;
+} */

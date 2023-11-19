@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    
+    <script src="./js/script.js" defer></script>
+    <title>Paint It</title>
+</head>
+<body>
+    <header >
+        <h1>Paint It!</h1>
+    </header>
+    
+    <section id="flex-container" class="flex-container">
+       
+        <section id="tools" class="tools">
+          <div class="tools-grid center">
+          <div class="flex-container center">
+            <!-- <label for="colorpicker" >Colour</label> -->
+            <img src="images/palette_FILL0_wght400_GRAD0_opsz24.svg" id="colour-pallette">
+            <input type="color" class="colorpicker" id="colorpicker" name="colorpicker" value="#FF5F1F">
+          </div>
+          <div class="flex-container center">
+            <img src="images/ink_eraser_FILL0_wght400_GRAD0_opsz24.svg" id="eraser">
+          </div>
+          <div class="flex-container center">
+            <!-- <label for="widthSelector">Brush thickness</label> -->
+            <img src="images/line_weight_FILL0_wght400_GRAD0_opsz24.svg">
+            <input type="range" id="widthSelector" name="widthSelector" min="1" max="100" class="width-input">
+          </div>
+          <div class="flex-container center">
+            <!-- <div id="brush-preview"></div> -->
+            <img src="images/paint-brush-household.svg" id="brush">
+            <div>
+              <!-- <label for="capStyle">Brush shape</label>
+              <br> -->
+              <select name="capStyle" id="capStyle" class="input capStyle">
+                <option value="round">Round</option>
+                <option value="square">Square</option>
+                <option value="butt">Flat</option>
+              </select>
+            </div>
+            
+          </div>
+          
+          <div class="flex-container center">
+            <div id="effect-preview" class="toolkit-div"></div>
+            <div class="toolkit-div">
+              <!-- <label for="special-effects">Colour effects</label>
+              <br> -->
+              <select name="special-effects" id="special-effects" class="input special-effects">
+                <option value="source-over">Source Over</option>
+                <option value="color-dodge">Colour Dodge</option>
+                <option value="color">Colour</option>
+                <option value="darken">Darken</option>
+                <option value="difference">Difference</option>
+                <option value="exclusion">exclusion</option>
+                <option value="hue">Hue</option>
+                <option value="lighten">Lighten</option>
+                <option value="lighter">Source In</option>
+                <option value="luminosity">Luminosity</option>
+                <option value="multiply">Multiply</option>
+                <option value="overlay">Overlay</option>
+                <option value="screen">Screen</option>
+                <option value="soft-light">Soft Light</option>
+              </select>
+            </div>
+            
+          </div>
+          
+          
+        <!-- add shapes with fill rect? -->
+          </div>
+        </section>
+        <canvas id="draw"></canvas>
+    </section>
+    
+    
+</body>
+</html>
+
+
+<!-- <div>
+            <label for="joinStyle">Choose your join type:</label>
+            <select name="joinStyle" id="joinStyle">
+                <option value="round">Round</option>
+                <option value="bevel">Bevel</option>
+                <option value="miter">Miter</option>
+            </select>
+          </div> -->
